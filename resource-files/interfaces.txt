@@ -1,0 +1,53 @@
+Common functional interfaces:
+-----------------------------
+public interface Comparator<T> {
+	int compare(T o1, T o2);
+}
+
+public interface Predicate<T> {
+	boolean test(T t);
+}
+
+public interface Consumer<T> {
+	void accept(T t);
+}
+
+public interface Function<T, R> {
+	R apply(T t);
+}
+
+List inteface functional methods:
+---------------------------------
+sort(Comparator)
+removeIf(Predicate)
+forEach(Consumer)
+map(Function)
+
+Intermediate Stream operations:
+-------------------------------
+filter
+map
+flatmap
+peek
+distinct
+sorted
+limit*
+
+Terminal Stream operations:
+---------------------------
+forEach
+forEachOrdered
+toArray
+reduce
+collect
+min
+max
+count
+anyMatch*
+allMatch*
+noneMatch*
+findFirst*
+findAny*
+orElse*
+
+*Short-circuit operations
